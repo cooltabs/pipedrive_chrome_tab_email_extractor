@@ -4,4 +4,4 @@ This is a simple Chrome extension what will fetch all the email info from your o
 
 ## Usage
 
-Having some tabs with Pipedrive deals opened you just need to press `Ctrl + Shift + J` (`Cmd + Shift + J` if you're using Mac) and the new windows with the information will open.
+Having some tabs with Pipedrive deals opened you just need to press `Ctrl + Shift + J` (`Cmd + Shift + J` if you're using Mac) and a new tab with the information will open.
