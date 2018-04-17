@@ -9,15 +9,16 @@
   },
   "content_scripts":  [
     {
-      "matches": ["https://*.pipedrive.com/deal/*"],
+      "matches": ["https://*.pipedrive.com/deal/*", "https://*.pipedrive.com/organization/*"],
       "js": ["js/email_checker.js", "js/jquery.min.js" ]
     }    
   ],
   "commands": {
     "save_emails": {
       "suggested_key": {
-        "default": "Ctrl+Shift+J",
-        "mac": "Command+Shift+J"
+        "default": "Ctrl+Shift+U",
+        "windows": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
       },
       "description": "Save emails in open tabs"
     }

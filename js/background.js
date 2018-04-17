@@ -6,7 +6,7 @@ chrome.commands.onCommand.addListener(function(command) {
 function saveEmails() {
   chrome.tabs.create({'url': chrome.extension.getURL('html/result.html'), 'selected': true});
 
-  chrome.tabs.query({"url": "https://cooltabs.pipedrive.com/deal/*"}, function(tabs) { 
+  chrome.tabs.query({"url": ["https://*.pipedrive.com/deal/*", "https://*.pipedrive.com/organization/*"]}, function(tabs) { 
     for (var i = 0; i < tabs.length; i++) { 
       chrome.tabs.sendMessage(tabs[i].id, { action: "check_email" }); 
     }
